@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:wght@300;400&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Ubuntu", sans-serif;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Pacifico", cursive;
+      color: rgb(131, 131, 218);
+
+      width: 200px;
+      margin: 50px auto;
+      padding: 10px;
+      border-radius: 12px;
+      border: 2px solid rgb(131, 131, 218);
+    }
+    form {
+      width: 800px;
+      margin: 100px auto;
+      box-shadow: 5px 5px 12px rgb(131, 131, 218);
+      border-radius: 15px;
+      padding: 13px;
+    }
+    label,
+    input,
+    button {
+      display: block;
+    }
+    label,
+    input {
+      width: 90%;
+      margin: 20px auto;
+      height: 30px;
+      color: rgb(131, 131, 218);
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    button {
+      margin: 10px auto;
+      padding: 10px;
+      color: white;
+      background-color: rgb(131, 131, 218);
+      font-size: 30px;
+      border: none;
+      border-radius: 20px;
+      font-family: "Pacifico", cursive;
+    }
+    select {
+      width: 80%;
+      display: block;
+      margin: 30px auto;
+      height: 30px;
+      color: rgb(131, 131, 218);
+      font-weight: bold;
+      font-size: 2cqmin;
+    }
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 0px;
+    }
+    section {
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <h1>gift shop</h1>
+    <form action="">
+      <label for="user-name">Your name</label>
+      <input type="text" id="user-name" required />
+      <label for="user-email">Your email address</label>
+      <input type="email" id="user-email" required />
+      <label for="user-gift">What gift do you want?</label>
+      <select name="gift" id="user-gift" required>
+        <option value="barbie doll">barbie doll</option>
+        <option value="teddy bear">Teddy bear</option>
+        <option value="pen">GLossy pen</option>
+      </select>
+      <button>order gift</button>
+    </form>
+    <section>
+      <img
+        src="https://img.freepik.com/free-vector/gift-box-design_1095-128.jpg?w=2000"
+        alt=""
+      />
+    </section>
+  </body>
+</html>
