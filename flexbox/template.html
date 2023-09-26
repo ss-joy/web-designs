@@ -11,27 +11,35 @@
       .container {
         border: 8px dotted blue;
         margin: 30px auto;
-        width: 1600px;
-        height: 600px;
+        width: 1200px;
+        height: 300px;
 
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
       }
       .box {
         height: 100px;
-        width: 100px;
+        width: 250px;
         text-align: center;
         font-size: 45px;
         color: white;
       }
-      .box:nth-of-type(2n + 1) {
-        height: 150px;
+      #x {
+        flex-shrink: 4;
       }
+      /* .box:nth-of-type(2n + 1) {
+        height: 150px;
+      } */
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="box">1</div>
+      <div id="x" class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <!-- <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
@@ -64,13 +72,8 @@
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div id="x" class="box"></div>
+      <div id="y" class="box"></div> -->
     </div>
     <script src="gen-random-color.js"></script>
   </body>
