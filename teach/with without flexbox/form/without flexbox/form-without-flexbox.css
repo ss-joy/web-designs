@@ -1,0 +1,42 @@
+h1 {
+  width: 800px;
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgb(79, 23, 209);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+form {
+  width: 800px;
+  margin: 0 auto;
+  border: rgb(79, 23, 209) 3px solid;
+  border-radius: 25px;
+  padding: 20px;
+}
+form label,
+input {
+  display: block;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: rgb(79, 23, 209);
+  font-weight: bold;
+}
+
+form input {
+  width: 780px;
+}
+
+form button {
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  color: rgb(79, 23, 209);
+  border: 2px solid rgb(79, 23, 209);
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 10px;
+}
