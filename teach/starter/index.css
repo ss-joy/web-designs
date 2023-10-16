@@ -1,0 +1,12 @@
+section {
+  border: 6px solid red;
+  width: 1500px;
+  height: 700px;
+}
+
+div {
+  font-size: 50px;
+  width: 300px;
+  height: 200px;
+  border: 6px solid orange;
+}
