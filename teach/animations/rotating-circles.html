@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .outer {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background-color: teal;
+      }
+      .inner {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: rgb(166, 215, 215);
+        border: 20px dotted white;
+        transition: transform 0.7s linear, background-color 3s ease-in;
+      }
+      .inner:hover {
+        background-color: rebeccapurple;
+        transform: translateX(80px) translateY(80px) rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>
