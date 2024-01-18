@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .msg-box {
+        background-color: #d8dadf;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .msg-box .msg-cir {
+        width: 62%;
+      }
+      .msg-box .zap {
+        position: absolute;
+        width: 30px;
+        transform: rotate(90deg);
+        top: 35%;
+      }
+      .counter {
+        background-color: red;
+        border-radius: 50%;
+        color: white;
+        padding: 3px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="msg-box">
+      <img class="msg-cir" src="../images/message-circle.svg" alt="" />
+      <img class="zap" src="../images/zap.svg" alt="" />
+      <span class="counter">23</span>
+    </div>
+  </body>
+</html>
