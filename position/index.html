@@ -1,0 +1,50 @@
+<!-- template for practice -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body div {
+        width: 100px;
+        height: 100px;
+      }
+      .fixed {
+        background-color: rgb(28, 214, 21);
+        position: fixed;
+
+        top: 100px;
+        left: 100px;
+        z-index: 3;
+      }
+      .relative {
+        position: relative;
+        background-color: rgb(164, 18, 18);
+
+        top: 120px;
+        z-index: 1;
+      }
+      .box {
+        position: relative;
+        border: 1px solid rgb(9, 15, 9);
+        margin: 20px;
+        height: 400px;
+      }
+      .absolute {
+        position: absolute;
+        background-color: rgb(17, 20, 218);
+        z-index: 2;
+      }
+      .static {
+        background-color: cadetblue;
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="static">static</div>
+    <div class="fixed">fixed</div>
+    <div class="relative">relative</div>
+    <section class="box">
+      <div class="absolute">absolute</div>
+    </section>
+  </body>
+</html>
