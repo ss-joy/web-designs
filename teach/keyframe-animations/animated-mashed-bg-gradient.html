@@ -5,48 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      @keyframes changeSize {
+      @keyframes redBall {
         0% {
-          transform: scale(1);
+          transform: translate(0px, 0px) scale(1);
         }
-        40% {
-          transform: scale(0.7);
+        30% {
+          transform: translate(300px, 300px) scale(0.7);
+        }
+        50% {
+          transform: translate(-100px, 250px) scale(1.5);
+        }
+        70% {
+          transform: translate(-100px, 250px) scale(2.7);
         }
         80% {
-          transform: scale(1.5);
+          transform: translate(100px, -250px) scale(2.5);
         }
         100% {
-          transform: scale(1);
+          transform: translate(0px, 0px) scale(1);
         }
       }
-      @keyframes move {
+
+      @keyframes yellowBall {
+        0% {
+          transform: translate(0px, 0px) scale(1);
+        }
+        40% {
+          transform: translate(500px, 100px) scale(0.5);
+        }
+        50% {
+          transform: translate(1000px, -50px) scale(3);
+        }
+        60% {
+          transform: translate(1000px, -50px) scale(3);
+        }
+        70% {
+          transform: translate(800px, 50px) scale(3);
+        }
+        100% {
+          transform: translate(0px, 0px) scale(1);
+        }
+      }
+      @keyframes skyBall {
         0% {
           transform: translate(0px, 0px);
         }
-        50% {
-          transform: translate(300px, 300px);
+        40% {
+          transform: translate(-500px, 100px);
         }
-        80% {
-          transform: translate(-100px, 250px);
+        60% {
+          transform: translate(-1000px, -50px) scale(1.1);
+        }
+        70% {
+          transform: translate(-900px, 50px) scale(1.1);
         }
         100% {
           transform: translate(0px, 0px);
         }
       }
 
-      @keyframes move-two {
-        0% {
-          transform: translate(0px, 0px);
-        }
-        40% {
-          transform: translate(500px, 100px);
-        }
-        60% {
-          transform: translate(1000px, -50px);
-        }
-        100% {
-          transform: translate(0px, 0px);
-        }
+      .pink {
+        background-color: rgb(226, 65, 119);
+        top: 50px;
+
+        animation-name: redBall;
+        animation-duration: 13s;
+        animation-iteration-count: infinite;
+      }
+      .yellow {
+        background-color: rgb(219, 219, 140);
+        bottom: 100px;
+
+        animation-name: yellowBall;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+      }
+      .blue {
+        background-color: powderblue;
+        right: 50px;
+
+        animation-name: skyBall;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+      }
+      .container {
+        position: relative;
+        height: 100vh;
+        padding: 1px;
+      }
+      .container div {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        filter: blur(72px);
+        position: absolute;
       }
       h1 {
         color: black;
@@ -57,51 +111,13 @@
         text-shadow: 1px 1px 4px black;
         position: relative;
       }
-      .blur-ball {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        filter: blur(72px);
-        position: absolute;
-      }
-      .pink {
-        background-color: rgb(226, 65, 119);
-        top: 50px;
-
-        animation-name: move-two;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-      }
-      .yellow {
-        background-color: rgb(219, 219, 140);
-        bottom: 100px;
-
-        animation-name: move;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate-reverse;
-      }
-      .blue {
-        background-color: powderblue;
-        right: 50px;
-
-        animation-name: changeSize;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-delay: 2s;
-      }
-      .container {
-        position: relative;
-        height: 100vh;
-        padding: 1px;
-      }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="blur-ball pink"></div>
-      <div class="blur-ball yellow"></div>
-      <div class="blur-ball blue"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
       <h1>hello world!!</h1>
     </div>
   </body>
